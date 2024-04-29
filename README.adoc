@@ -130,7 +130,7 @@ image::images/variables.png[]
 
 * **Reasignación y redeclaración**: Las variables declaradas con `var` pueden ser reasignadas y redeclaradas en cualquier parte del código.
 
-* **Izado (hoisting)**: Las declaraciones `var` son izadas al inicio de su contexto de ejecución, lo que significa que pueden ser utilizadas antes de ser declaradas en el código.
+* **Hoisting**: Las declaraciones `var` son elevadas al inicio de su contexto de ejecución, lo que significa que pueden ser utilizadas antes de ser declaradas en el código.
 
 [source,javascript]
 ----
@@ -162,7 +162,7 @@ exampleVar();
 
 * **Permite reasignación**: Las variables declaradas con `let` pueden ser reasignadas, lo que significa que su valor puede cambiar después de la declaración inicial.
 
-* **No se iza (hoisted)**: A diferencia de `var`, las variables declaradas con `let` no son izadas al principio de su contexto de ejecución. Esto significa que no pueden ser utilizadas antes de su declaración en el código.
+* **Hoisting**: A diferencia de `var`, las variables declaradas con `let` no son elevadas al principio de su contexto de ejecución. Esto significa que no pueden ser utilizadas antes de su declaración en el código.
 
 [source,javascript]
 ----
@@ -195,7 +195,7 @@ exampleLet();
 
 * **No permite redeclaración ni reasignación**: No puedes declarar la misma variable más de una vez en el mismo ámbito ni reasignar su valor después de la declaración inicial utilizando `const`.
 
-* **No se iza (hoisted)**: Al igual que con `let`, las variables declaradas con `const` no son izadas al principio de su contexto de ejecución y no pueden ser utilizadas antes de su declaración en el código.
+* **Hoisting**: Al igual que con `let`, las variables declaradas con `const` no son elevadas al principio de su contexto de ejecución y no pueden ser utilizadas antes de su declaración en el código.
 
 [source,javascript]
 ----
