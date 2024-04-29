@@ -1,0 +1,348 @@
+1.¿Qué tipo de bucles hay en JS?
+Los bucles, son una estructura de programación que te permiten ejecutar instrucciones de forma repetitiva, dentro de un bloque de programación. En este artículo se te explicara la sintaxis con ejemplos en el JavaScript sobre los bucles.
+
+Los bucles son una herramienta muy importante en la programación, ya que nos permiten ejecutar un bloque de código varias veces seguidas, se trata de uno de los conceptos básicos en programación. Hay dos tipos principales de bucles: los bucles «while» y los bucles «for».
+
+Evidentemente, si estás pensando en formarte como desarrollador Full Stack, Data Scientist o incluso si quieres empezar con cualquier lenguaje de programación, deberías conocer los bucles cuanto antes.
+
+Esta estructura de programación existe en la mayoría de lenguajes de programación.
+
+1.1 Declaración for
+Es un tipo de bucle cuya ejecución dura hasta que su condición se evalué como falsa (false). Es similar a los ciclos for de Java, PHP, C# y otro lenguajes de programación.
+
+Además, este tipo de bucle es el más empleado en la programación.
+
+Sintaxis:
+
+for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización])
+    cuerpoBucle
+La estructura se describe de la siguiente manera:
+
+expresiónInicial: Esta expresión indica la condición para el inicio del ciclo. Usualmente es la declaración de una variable numérica.
+expresiónCondicional: Esta expresión es la condición que se debe mantener para que siga ejecutando el ciclo.
+expresiónDeActualización: Esta expresión cambia el valor de la variable numérica indicada en la [expresionInicial]
+cuerpoBucle: Es el conjunto de instrucciones que se ejecutan durante cada iteración del bucle.
+Ejemplo N° 1
+En este ejemplo declaras una variable x con valor inicial 1 y por cada iteración su valor va incrementando a 1.
+
+for(var x=1;x<=6;x=x+1){
+    console.log(x);
+}
+Puedes revisar este ejemplo y considerar a la variable x como la expresión de condición para que se inicie, mantenga y finalice el bucle. El bucle tiene las siguientes partes:
+
+Expresión Inicial (var x=1): Consiste en la declaración de la variable x con el valor inicial 1 para que comience el bucle.
+
+Expresión Condicional (x<=6): Consiste en la evaluación la variable x para que ejecute la iteración. En este ejemplo la variable x condiciona que el bucle se ejecutara hasta que dicha variable x no sea menor o igual a 6. En este caso, cuando la variable x tenga el valor 7 ya no volverá a ejecutarse y terminara el bucle. Como se explicó este bucle se mantiene hasta que la condición llegue a un valor falso (false). El valor de la variable x se evalúa antes que inicie cada ciclo.
+
+Expresión de Actualización (x=x+1): En esta declaración se actualiza el valor de la variable x. En este ejemplo por cada iteración el valor de la variable x a 1. En caso de solo incrementar el valor de una variable numérica a 1 se puede emplear también esta expresión: (x++).
+
+Resultado: 
+
+1.2 Declaración do…while
+Es similar al ciclo for explicado anteriormente. Se ejecuta hasta que la condición sea falsa (false). La diferencia se basa en que la evaluación se realiza al final de cada iteración.
+
+Sintaxis
+
+do
+  cuerpoBucle       
+while (expresionCondicional);
+La estructura se describe de la siguiente manera:
+
+expresiónCondicional: Es la expresión que condiciona la ejecución de la iteración del bucle.
+
+cuerpoBucle: Es el conjunto de instrucciones que se ejecutan durante cada iteración.
+
+Ejemplo N° 1
+En este ejemplo se evaluará la variable i como expresión condicional para la ejecución del bucle. Cuya variable incrementara dentro del cuerpo del bucle.
+
+let i=0;
+do{
+    i=i+1;
+    console.log(i);
+}
+while(i<5);
+Puedes revisar este ejemplo y considerar a la variable i como la expresión de condición para que dure la iteración del bucle. El ciclo tiene las siguientes partes:
+
+Declaración Variable (let i=0): Se declara la variable i antes de ingresar al ciclo con el valor inicial 0.
+
+Actualización de Variable (i=i+1): Dentro del cuerpo del bucle se actualiza el valor de la variable i a más 1.
+
+Evaluación de Expresión Condicional (while(i<5)): En esta declaración se evalúa la expresión condicional; en este caso la variable es i. Cuando termine cada iteración se realiza dicha evaluación para mantener o terminar el bucle y seguir con las instrucciones siguientes. En este caso se ejecuta la iteración 5 veces.
+
+Resultado 
+
+Ejemplo N° 2
+En este ejemplo es igual al Ejemplo N° 1 solo que la variable i se iniciara con el valor 6.
+
+let i=6;
+do{
+    i=i+1;
+    console.log(i);
+}
+while(i<5);
+Puedes revisar este ejemplo y considerar a la variable i como la expresión de condición para que dure la iteración del bucle. El ciclo tiene las siguientes partes:
+
+Declaración Variable (let i=6): Se declara la variable i antes de ingresar al ciclo con el valor inicial 6.
+
+Actualización de Variable (i=i+1): Dentro del cuerpo del bucle se actualiza el valor de la variable i a más 1. Es decir antes de su evaluación tendrá la variable el valor 7 y se ejecutara una vez las instrucciones del cuerpo del bucle. Pues la variable de valor inicial 6 se ha incrementado más a 1.
+
+Evaluación de Expresión Condicional (while(i<5)): En esta declaración se evalúa la expresión condicional. Pero después de la iteración del cuerpo del bucle el valor de la variable es 7. Por tal razón, la expresión condicional es falsa y en consecuencia termina el ciclo y solo tiene una iteración.
+
+Resultado 
+
+1.3 Declaración while
+Este ciclo se ejecutara mientras la condición sea verdadera (true).
+
+Source code	   
+while (expresionCondicional)
+       cuerpoBucle
+La estructura se describe de la siguiente manera:
+
+expresiónCondicional: Es la expresión que condiciona la ejecución de la iteración del bucle.
+
+cuerpoBucle: Es el conjunto de instrucciones que se ejecutan durante cada iteración.
+
+Ejemplo N° 1
+En este ejemplo se evaluará la variable x como expresión condicional para la ejecución del bucle. Cuya variable incrementara dentro del cuerpo del bucle.
+
+let x=0;
+while(x<5){
+    x=x+1;
+    console.log(x);
+}
+Puedes revisar este ejemplo y considerar a la variable x como la expresión de condición para que dure la iteración del bucle. El bucle tiene las siguientes partes:
+
+Declaración Variable (let x=0): Se declara la variable x antes de ingresar al ciclo con el valor inicial 0.
+
+Actualización de Variable (x=x+1): Dentro del cuerpo del bucle se actualiza el valor de la variable x a más 1.
+
+Evaluación de Expresión Condicional (while(x<5)): En esta declaración se evalúa la expresión condicional; en este caso la variable x. La evaluación se realiza antes de cada iteración. El resultado en este ejemplo es la iteración de 5 veces. Cuando la variable x tenga el valor 6, ya no cumplirá la condición de verdadero y terminara la iteración del ciclo.
+
+Resultado 
+
+1.4 Declaración for…in
+Este bucle es diferente a los anteriores, pues recorre los elementos de una lista (array) y las propiedades de un objeto.
+
+Source code	   
+for (variable in objeto|array)
+ 
+    cuerpoBucle
+La estructura se describe de la siguiente manera:
+
+variable: Es la expresión que representa el índice cada uno de los elementos de una lista o el índice de las propiedades de un objeto.
+
+objeto|array: Puede ser un objeto con sus respectivas propiedades o una lista (array) y sus elementos.
+
+cuerpoBucle: Es el conjunto de instrucciones que se ejecutan durante cada iteración del bucle.
+
+Ejemplo N° 1
+En este ejemplo el bucle recorrerá un objeto con sus respectivas propiedades y valores respectivos. El objeto es Persona.
+
+var Persona={
+    Nombre:'Williams',
+    Apellidos:"Morales",
+    Edad:36,
+    }
+ 
+for(item in Persona){   
+    //Obtener cada propiedad del objeto
+    console.log(item);
+ 
+    //Obtener cada valor de cada propiedad
+    //del objeto
+    console.log(Persona[item]);    
+}
+En este ejemplo se recorre el objeto Persona para obtener el nombre de sus propiedades y sus respectivos valores. El ciclo tiene las siguientes partes:
+
+Declaración Objeto ( var Persona = {} ): Se declara el objeto persona con las propiedades Nombre (Nombre = “Williams”), Apellidos (Persona.Apellidos=”Morales”), Edad ( Persona.Edad = 36 ).
+
+Ciclo de Recorrido (for(item in Persona) ): Representa el recorrido de la variable ítem en el objeto Persona. La variable ítem contiene el nombre de la propiedad del objeto por cada iteración.
+
+Mostrar la propiedad del objeto ( ítem ): Se obtiene el nombre de la propiedad por iteración.
+
+Mostrar el valor de la propiedad del objeto ( Persona[ítem] ): Se obtiene el valor de la propiedad según el nombre de la propiedad.
+
+Resultado 
+
+Ejemplo N° 2
+En este ejemplo el bucle recorrerá una lista (array) con sus respectivos elementos. El objeto es Paises.
+
+var Paises=[];
+ 
+Paises.push('Peru');
+Paises.push('Colombia');
+Paises.push('Chile');
+Paises.push('Brasil');
+ 
+for(item in Paises){   
+    //Obtener el indice 
+    console.log(item);
+ 
+    //Obtener el valor de la lista 
+    //según el su indice
+    console.log(Paises[item]);    
+}
+En este ejemplo se recorre la lista (array) Paises para obtener el índice del array y los valores correspondientes según su índice. El bucle tiene las siguientes partes:
+
+Declaración Lista (Array) ( var Paises = [] ): Se declara el listado de países con sus elementos (‘Peru’,’Colombia’,’Chile’,’Ecuador’). Los elementos se agregan a la lista con el método push.
+
+Ciclo de Recorrido (for(item in Paises) ): Representa el recorrido de la variable ítem en el listado Paises. La variable ítem contiene el índice del listado Paises por cada iteración.
+
+Mostrar el índice ( ítem ): Se obtiene el índice del listado. Se comienza desde cero.
+
+Mostrar el valor del listado ( Paises[ítem] ): Se obtiene el valor del listado, según el índice.
+
+Resultado 
+
+1.5 Declaración for…of
+Este bucle recorre los elementos de un array. No incluye las propiedades de un objeto y sus valores.
+
+for (variable of objetoIteracion)
+ 
+    cuerpoBucle
+La estructura se describe de la siguiente manera:
+
+variable: Es la expresión que representa un elemento del objetoIterable (array, map, etc.).
+
+objetoIteracion: Es un objeto de iteración como una lista (array).
+
+cuerpoBucle: Es el conjunto de instrucciones que se ejecutan durante cada iteración del bucle.
+
+Ejemplo N° 1
+En este ejemplo el bucle recorrerá un objeto de tipo lista (array) para obtener sus valores. La lista es Empleado.
+
+var Empleado=['Williams','Morales',36,1500];
+Empleado.Pais='Peru';
+ 
+for(let item of Empleado){
+    console.log(item)
+}
+En este ejemplo se recorre la lista (array) Empleado para obtener sus valores. El bucle tiene las siguientes partes:
+
+Declaración Array ( var Empleado = [] ): Se declara la lista (array) Empleado con los elementos: “Williams”, ”Morales”, 36, 1500 ).
+
+Declaración de Propiedad (Pais=’Peru’ ): A la lista (array) se le asigna una propiedad y valor.
+
+Ciclo de Recorrido (for(let item of Empleado) ): Representa el recorrido de la variable ítem en la lista (array) Empleado. La variable ítem contiene el elemento del array.
+
+Mostrar el índice ( ítem ): Se obtiene el elemento del array por cada iteración. Pero la declaración ítem no muestra la propiedad y/o su valor.
+
+Resultado 
+
+1.6 Declaración break
+La declaración break permite terminar el ciclo antes que se cumpla la expresión condicional
+
+bucle (expresionCondicional)
+      cuerpoBucle
+      expresionSalto;
+La estructura se describe de la siguiente manera:
+
+expresionCondicional: Es la expresión que condiciona la iteración del bucle.
+
+expresionSalto: Es la declaración que da por terminado el bucle. cuerpoBucle: Es el conjunto de instrucciones que se ejecutan durante cada iteración.
+
+Ejemplo N° 1
+En este ejemplo el bucle recorrerá hasta que la variable x tenga el valor 5. Sin embargo, terminara el ciclo del bucle cuando el valor tenga 3. Pues habrá un flujo condicional que evalué, si la variable x tenga el valor 3 entonces se ejecute la declaración break y se termine el bucle.
+
+for(var x=0;x<=5;x=x+1){
+    if(x==3){
+        break;
+    }
+    console.log(x);
+}
+En este ejemplo el bucle se ejecutara hasta que la variable tenga una valor superior a 5 ( x=6 ). El ciclo tiene las siguientes partes:
+
+Expresión Inicial (var x=0): Consiste en la declaración de la variable x con el valor inicial 0 para que comience el bucle.
+
+Expresión Condicional (x<=5): Consiste en la evaluación de la variable x para que ejecute la iteración. En este ejemplo la variable x condiciona que el bucle se ejecutara hasta que dicha variable x no sea menor o igual a 5. Según la condición del bucle, cuando la variable x tenga el valor 6 ya no debería volverá a ejecutarse y terminara el bucle. Como se explicó este ciclo se mantiene hasta que la condición llegue a un valor falso (false). El valor de la variable x se evalúa antes que inicie cada ciclo.
+
+Expresión de Actualización (x=x+1): En esta declaración se cambia el valor de la variable x. En este ejemplo por cada iteración el valor de la variable x sea más 1. En caso de solo incrementar el valor de la variable numérica a 1 se puede emplear también esta expresión: (x++).
+
+Expresión de Salida del Bucle ( break ): Esta expresión se ejecutara cuando la condicional if evalué la variable x y tenga el valor 3. En consecuencia, se terminara el bucle sin que la variable llegue a tener el valor 6; como se esperaba en la expresión condicional.
+
+Resultado 
+
+1.7 Declaración continue
+La declaración continue termina la iteración actual de bucle y continua con la siguiente iteración del bucle.
+
+bucle (expresionCondicional)
+      cuerpoBucle
+      expresionSalto;
+La estructura se describe de la siguiente manera:
+
+expresionCondicional: Es la expresión que condiciona la iteración del bucle.
+
+expresionSalto: Es la declaración que da por terminado la iteración actual del bucle y pasa a ejecutar la siguiente iteración.
+
+cuerpoBucle: Es el conjunto de instrucciones que se ejecutan durante cada iteración.
+
+Ejemplo N° 1
+En este ejemplo el bucle recorrerá hasta que la variable x tenga el valor 5. Sin embargo, cuando la variable tenga el valor 3 terminara la iteración y continuara con la siguiente iteración. Pues habrá un flujo condicional (if) que evaluara, si la variable x tiene el valor 3. En consecuencia, se ejecutara la declaración continue y se termine la iteración actual del bucle.
+
+for(var x=0;x<=5;x=x+1){
+    if(x==3){
+        continue;
+    }
+    console.log(x);
+}
+En este ejemplo el bucle se ejecutara hasta que la variable tenga una valor superior a 5 ( x=6 ). El bucle tiene las siguientes partes:
+
+Expresión Inicial (var x=0): Consiste en la declaración de la variable x con el valor inicial 0 para que comience el bucle.
+
+Expresión Condicional (x<=5): Consiste en la evaluación la variable x para que ejecute la iteración. En este ejemplo la variable x condiciona que el bucle se ejecutara hasta que dicha variable x no sea menor o igual a 5. En teoría, cuando la variable x tenga el valor 6 ya no debería volverá a ejecutarse y terminara el bucle. Como se explicó este bucle se mantiene hasta que la condición llegue a un valor falso (false). El valor de la variable x se evalúa antes que inicie cada iteracion.
+
+Expresión de Actualización (x=x+1): En esta declaración se cambia el valor de la variable x. En este ejemplo por cada iteración el valor de la variable x se incrementa a 1. En caso de incrementar el valor de la variable numérica a 1 se puede emplear también esta expresión: (x++).
+
+Expresión de Salida del Bucle ( continue ): Esta expresión se ejecutara cuando la condicional if evalué la variable x y tenga el valor 3. En consecuencia, se terminara la iteración actual del bucle y prosiga con la iteración siguiente.
+
+Resultado 
+
+1.8 Declaración labeled
+Es una etiqueta, semejante a una variable que hace referencia a un bucle determinado. Esta etiqueta se puede emplear para ejecutar un break o continue en el bucle referenciado.
+
+etiquetaBucle: Bucle (expresionCondicional)
+        cuerpoBucle
+La estructura se describe de la siguiente manera:
+
+etiquetaBucle: Es la expresión que condiciona la iteración del ciclo.
+
+cuerpoBucle: Es el conjunto de instrucciones que se ejecutan durante cada iteración.
+
+Ejemplo N° 1
+En este ejemplo existen 2 bucles: uno externo y otro interno. El bucle externo estará referenciado a una etiqueta ( labelBucle ). Cuando dentro del cuerpo del bucle interno se evalué el valor de las variables x y z a 3 al mismo tiempo. Se empleara la etiqueta labelBucle para terminar la ejecución de dicho bucle con la declaración break. Por lo tanto, se terminara la ejecución de ambos bucles (externo e interno) y se continuara con las siguientes instrucciones.
+
+let x=0;
+let z=0;
+labelBucle:while(true){
+    console.log("Bucle Externo :" + x);
+    x=x+1;
+    z=1;
+    while(true){
+        console.log("Bucle Interno :" + z);
+        z=z+1;
+        if(z=== 3 && x===3){
+            console.log('Salir Bucle labelBucle');
+            break labelBucle;
+        }else if(z===3){
+            break;
+        }
+    }
+}
+Este ejemplo tiene las siguientes partes:
+
+Declaración y Referencia Bucle Externo a Etiqueta ( labelBucle:while(true) ): Consiste en la declaración de una etiqueta semejante a una variable. Para luego emplearla para terminar el bucle.
+
+Actualización de la Variable del Bucle Externo ( x= x+1 ): Esta expresión actualiza la valor de la variable x del bucle externo a más 1 por cada iteración del bucle externo.
+
+Declaración de Bucle Interno (while(true) ): Consiste en la declaración del bucle interno. Donde la condicional es true, igual al bucle externo. Con la expresión condicional de ambos bucles siendo true, serian bucles infinitos. Para más detalle de este tipo de bucles, revisar su respectiva explicación en este mismo post.
+
+Actualización de la Variable del Bucle Interno (z=z+1): Esta expresión actualiza el valor de la variable del bucle interno a 1 por cada iteración del bucle interno.
+
+Sentencia Condicional (if(z=== 3 && x===3) ): Esta sentencia if evalúa una expresión como verdadero (true) o falso (false). En este caso, evalúa si las variables z y x tiene el valor 3. De cumplir con esa condición se ejecuta la instrucción (break labelBucle ) para que termine el bucle externo con el cual esta referenciado la etiqueta labelBucle. Por lo tanto, se termina la ejecución de los bucles externo e interno.
+
+Sentencia Condicional Si Cumple (lse if(z===3){ ): En caso de no cumplir la condición de la sentencia If; se evalúa esta sentencia ( else if … ). Donde solo se verifica el valor de la variable z y de tener el valor 3, se terminara la ejecución solo del bucle interno con la declaración break explicada anteriormente y continuara iterando el bucle externo. Por consiguiente, se volverá a ejecutar el bucle interno. Hasta que las variables x y z tengan el valor 3 cada una y se ejecute la instrucción break labelBucle y termine ambos bucles (interno y externo).
+
+Resultado 
+
+1.9 Conclusiones
+Si el cuerpo del bucle es de una solo línea de código, no es obligatorio colocarlo entre llaves ({…}). Pero, si dicho cuerpo de bucle es de más de una línea de código es obligatorio colocarlo entre llaves. El for es el bucle más utilizado en los lenguajes de programación. Se puede referenciar un bucle a una etiqueta. Luego emplearla para terminar solo una iteración de dicho bucle ( [etiquetaBucle] continue ) o todo el ciclo completo del bucle ( [etiquetaBucle] break ). El bucle for y do while son similares, pues ambas se ejecutaran hasta que su condición sea falsa.
