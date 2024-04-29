@@ -4,9 +4,9 @@
 
 // Ejercicio 1. Bucle FOR
 
-const miLista = ["velma", "exploradora", "jane", "john", "harry"]
-for ( let i = 0; i < miLista.length; i++) {
-    console.log(miLista[i])
+const miLista = ["velma", "exploradora", "jane", "john", "harry"];
+for (let i = 0; i < miLista.length; i++) {
+    console.log(miLista[i]);
 }
 
 // Ejercicio 2. Bucle WHILE
@@ -20,6 +20,6 @@ while (count < miLista.length) {
 // Ejercicio 3. FUNCIÓN FLECHA
 
 const flecha = () => {
-  console.log("Hola Mundo")
+  console.log("Hola Mundo");
 }
-flecha()
+flecha();
