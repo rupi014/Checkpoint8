@@ -19,4 +19,4 @@ while (count < miLista.length) {
 const flecha = () => {
   console.log("Hola Mundo")
 }
-flecha()
+flecha();
